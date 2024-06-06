@@ -449,14 +449,18 @@
 <input class="input-user" type="tel" id="user-tel"/>
 <label class="label-user" name="user-email" for="user-email" placeholder="modal-icon">Email</label>
 <input class="input-user" type="email" id="user-email"/>
-<label class="label-comment" name="comment" for="comment" placeholder="modal-icon">Content</label>
-<textarea class="comment" type="text" id="comment" placeholder="Text input">
 
-    <select class="conditions" name="conditions">
-    <option name="conditions-option" value="conditions">
-        I accept the terms and conditions of the <span class="conditions-option-color">Privacy Policy</span> 
-    </option>
-</select>
+<label class="label-comment" name="comment" for="comment" placeholder="modal-icon">Content</label>
+<textarea class="comment" type="text" id="comment" placeholder="Text input"></textarea>
+
+<div class="fieldset-policy">
+    <input class="policy-input" type="policy-checkbox" name="policy" id="policy"/>
+    <label name="policy" for="policy" value="policy">
+        <span class="policy-btn"></span>
+        I accept the terms and conditions of the <span class="policy-color">Privacy Policy</span> 
+    </label>
+</div>
+
 
 <button type="submit" class="send-btn">Send</button>
     </div>
