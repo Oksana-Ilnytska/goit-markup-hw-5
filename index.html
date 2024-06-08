@@ -435,22 +435,36 @@
 </li>
 </ul>
 </div>
+<div class="container-subscribe-btn"> 
+<div class="container-subscribe-input">
+    <label class="subscribe-label" name="subscribe-label" for="subscribe">Subscribe</label>
+
+   <input class="subscribe-input" type="email" name="subscribe" id="subscribe" required placeholder="E-mail"/>
+</div>
+
+   <button type="submit" class="button-subscribe">Subscribe</button>
+   <svg class="subscribe-icon" width="24" height="24">
+    <use href="./images/icons.svg#icon-frame-black"></use>
+   </svg>
+</div>
 
 </div> 
-</footer>
 
+<form> 
 <div class="backdrop is-open">
     <div class="modal">
+        <div class="container-close-btn">
 <button class="close-btn" type="button">
     <svg class="icon-close" width="8" height="8">
         <use href="./images/icons.svg#icon-close-black"></use>
     </svg>
 </button>
+</div>
 <p class="modal-title">Leave your contacts and we will call you back</p>
 
 <div class="fieldset"> 
 <label class="label-user" name="user-name" for="user-name">Name</label>
-<input class="input-user" type="text" id="user-name"/>
+<input class="input-user" type="text" id="user-name" required/>
 <svg class="icon-input" width="18" height="18">
     <use href="./images/icons.svg#icon-person-black"></use>
 </svg>
@@ -458,7 +472,7 @@
 
 <div class="fieldset">
 <label class="label-user" name="user-tel" for="user-tel">Phone</label>
-<input class="input-user" type="tel" id="user-tel"/>
+<input class="input-user" type="tel" id="user-tel" required/>
 <svg class="icon-input" width="18" height="18">
     <use href="./images/icons.svg#icon-phone-black"></use>
 </svg>
@@ -466,7 +480,7 @@
 
 <div class="fieldset">
 <label class="label-user" name="user-email" for="user-email">Email</label>
-<input class="input-user" type="email" id="user-email"/>
+<input class="input-user" type="email" id="user-email" required/>
 <svg class="icon-input" width="18" height="18">
     <use href="./images/icons.svg#icon-email-black"></use>
 </svg>
@@ -480,15 +494,21 @@
 <div class="fieldset-policy">
     <input class="policy-input" type="policy-checkbox" name="policy" id="policy"/>
     <label class="policy-label" name="policy" for="policy" value="policy" >
-        <span class="policy-btn"></span>
+        <span class="policy-checked">
+            <svg class="icon-checked" width="10" height="8">
+                <use href="./images/icons.svg#icon-vector"></use>
+            </svg>
+        </span>
         I accept the terms and conditions of the <span class="policy-color">Privacy Policy</span> 
     </label>
+    
 </div>
 
 
 <button type="submit" class="send-btn">Send</button>
     </div>
 </div>
+</form>
 
 </body>
 </html>
